@@ -1,0 +1,98 @@
+.email {
+  width: 30px;
+  height: auto;
+}
+
+.email:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.name {
+  font-size: 25px;
+  text-align: center;
+
+}
+.linkedin {
+  width: 30px;
+  height: auto;
+}
+
+.linkedin:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.github {
+  width: 30px;
+  height: auto;
+  
+}
+
+.github:hover{
+  transform:scale(1.2);
+  cursor: pointer;
+}
+
+a {
+  color: black;
+  text-align:center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+
+a:hover::after {
+  content: '>>';
+  position: absolute;
+  opacity:0;
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+a:hover {
+  transform:scale(1.2);
+  opacity:1.5;
+  text-decoration: none;
+}
+
+#picofme {
+  opacity: 0.8;
+  width:350px;
+  height:auto;
+  border-radius:50%;
+}
+
+#right-side {
+  position:relative;
+  left:400px
+}
+
+#left-side {
+  position:fixed
+}
+
+/* #portfolioSquares:hover {
+  transform:scale(1.2);
+} */
+#portfolioSquares {
+  position: relative;
+  /* width: 400px;
+  height: auto; */
+  opacity:.80;
+}
+
+
+#caption {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+}
+.overCard{
+  margin-left: 25;
+}
+
+.hovering:hover{
+  transform:scale(1.2);
+}

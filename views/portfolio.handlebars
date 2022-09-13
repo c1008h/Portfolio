@@ -1,0 +1,22 @@
+<div class="portfolio" id="#right-side">
+  <h2>Portfolio</h2>
+  <div class="container">
+    <div class="row">
+      {{#each projects as |project|}}
+      
+        <div class="col-6">
+          <img id="portfolioSquares" class='col-md-12 mt-4' src="{{project.screenShot}}" alt="Card image">
+          <div class="card-img-overlay col-12" id="caption">
+            <div class="ml-4 overCard">
+              <h5 class="card-title">{{project.title}}</h5>
+              <p class="card-text">{{project.bold}}</p>
+              <a class='hovering' href="{{githubLink}}"><img src="/images/github-square-512.webp" width="25px"></a>
+              <a href='/project/{{project.id}}'><button type="button" class="btn btn-light ml-4 viewMore">More</button></a>
+            </div>
+          </div>
+        </div>
+      
+      {{/each}}
+    </div>
+  </div>
+</div>
